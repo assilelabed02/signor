@@ -1,0 +1,289 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* .login-users {
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+  }
+  .login-useres .h3 {
+    background-color: #FFFFFF;
+    height: 1024px;
+    position: relative;
+    width: 1440px;
+  }
+  .login-useres .input {
+    height: 41px;
+    left: 152px;
+    position: absolute;
+    top: 27px;
+    width: 1137px;
+  }
+  .login-useres .h3 {
+    height: 40px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 168px;
+  }
+
+  .login-useres .input {
+    color: #000000;
+    font-family: "Sansation-Regular", Helvetica;
+    font-size: 30px;
+    font-weight: 400;
+    left: 42px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 3px;
+    white-space: nowrap;
+  }
+
+
+  .login-useres .button {
+  color: #fff;
+  background-color: #8e1111;
+  font-family: "Sansation-Regular", Helvetica;
+  margin-top: 400px;
+  margin-left: 30px;
+  border-radius: 5px;
+  height: 48px;
+  position: relative;
+  width: 319px;
+  cursor: pointer;
+}
+  /* .adding-business .navbar {
+    height: 16px;
+    left: 400px;
+    position: absolute;
+    top: 12px;
+    width: 311px;
+  }
+  .adding-business .text-wrapper-2 {
+    color: #000000;
+    font-family: "Sansation-Regular", Helvetica;
+    font-size: 14px;
+    font-weight: 400;
+    left: 0;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 0;
+    white-space: nowrap;
+    cursor: pointer;
+  }
+  .adding-business .text-wrapper-3 {
+    color: #000000;
+    font-family: "Sansation-Regular", Helvetica;
+    font-size: 14px;
+    font-weight: 400;
+    left: 109px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 0;
+    white-space: nowrap;
+    cursor: pointer;
+  }
+  .adding-business .text-wrapper-4 {
+    color: #000000;
+    font-family: "Sansation-Regular", Helvetica;
+    font-size: 14px;
+    font-weight: 400;
+    left: 183px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 0;
+    white-space: nowrap;
+    cursor: pointer;
+  }
+  .adding-business .text-wrapper-5 {
+    color: #000000;
+    font-family: "Sansation-Regular", Helvetica;
+    font-size: 14px;
+    font-weight: 400;
+    left: 244px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 0;
+    white-space: nowrap;
+    cursor: pointer;
+  }
+  .adding-business .sign-in {
+    height: 41px;
+    left: 1030px;
+    position: absolute;
+    top: 0;
+    width: 109px;
+  }
+  .adding-business .overlap-group {
+    background-color: #4E7E99;
+    border-radius: 50px;
+    height: 41px;
+    position: relative;
+    width: 107px;
+  }
+  .adding-business .text-wrapper-6 {
+    color: #FFFFFF;
+    font-family: "Sansation-Bold", Helvetica;
+    font-size: 14px;
+    font-weight: 700;
+    left: 22px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 12px;
+    white-space: nowrap;
+  }
+  .adding-business .overlap {
+    height: 403px;
+    left: 150px;
+    position: absolute;
+    top: 141px;
+    width: 1140px;
+  }
+  .adding-business .overlap-2 {
+    height: 403px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 1140px;
+  }
+  .adding-business .rectangle {
+    background-color: #C4C4C4;
+    border-radius: 10px;
+    box-shadow: inset 0px 0px 20px 10px #00000033;
+    height: 150px;
+    left: 0;
+    position: absolute;
+    top: 120px;
+    width: 1140px;
+    cursor: pointer;
+  }
+  .adding-business .text-wrapper-7 {
+    color: #00000033;
+    font-family: "Sansation-Bold", Helvetica;
+    font-size: 200px;
+    font-weight: 700;
+    left: 500px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 17%;
+    white-space: nowrap;
+    cursor: pointer;
+  }
+  .adding-business .group-2 {
+    height: 73px;
+    left: 62px;
+    position: absolute;
+    top: 330px;
+    width: 462px;
+  }
+  .adding-business .text-wrapper-8 {
+    color: #000000;
+    font-family: "Sansation-Regular", Helvetica;
+    font-size: 16px;
+    font-weight: 400;
+    left: 1px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 0;
+    white-space: nowrap;
+  }
+  .adding-business .rectangle-2 {
+    background-color: #F7F7F7;
+    border: 1px solid;
+    border-color: #000000;
+    font-family: "Sansation-Regular", Helvetica;
+    border-radius: 10px;
+    height: 48px;
+    left: 0;
+    position: absolute;
+    top: 25px;
+    width: 460px;
+  }
+  .adding-business .group-3 {
+    height: 73px;
+    left: 616px;
+    position: absolute;
+    top: 330px;
+    width: 462px;
+  }
+  .adding-business .p {
+    color: #000000;
+    font-family: "Sansation-Regular", Helvetica;
+    font-size: 28px;
+    font-weight: 400;
+    left: 2px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 23px;
+    white-space: nowrap;
+  }
+  .adding-business .group-4 {
+    height: 73px;
+    left: 212px;
+    position: absolute;
+    top: 569px;
+    width: 462px;
+  }
+  .adding-business .group-5 {
+    height: 73px;
+    left: 212px;
+    position: absolute;
+    top: 667px;
+    width: 462px;
+  }
+  .adding-business .group-6 {
+    height: 73px;
+    left: 212px;
+    position: absolute;
+    top: 765px;
+    width: 462px;
+  }
+  .adding-business .group-7 {
+    height: 73px;
+    left: 212px;
+    position: absolute;
+    top: 863px;
+    width: 462px;
+  }
+  .adding-business .group-8 {
+    height: 367px;
+    left: 766px;
+    position: absolute;
+    top: 569px;
+    width: 462px;
+  }
+  .adding-business .rectangle-3 {
+    background-color: #F7F7F7;
+    border: 1px solid;
+    border-color: #000000;
+    border-radius: 10px;
+    height: 342px;
+    left: 0;
+    position: absolute;
+    top: 25px;
+    width: 460px;
+  }
+  .button {
+    color: #fff;
+    background-color: #000000;
+    font-family: "Sansation-Regular", Helvetica;
+    margin-top: 400px;
+    margin-left: 30px;
+    border-radius: 5px;
+    height: 48px;
+    position: relative;
+    width: 319px;
+    cursor: pointer;
+  } */ 
