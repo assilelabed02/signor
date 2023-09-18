@@ -8,40 +8,46 @@ SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,N
 -- Schema mydb
 -- -----------------------------------------------------
 -- -----------------------------------------------------
--- Schema vite_schema
+-- Schema jwt
 -- -----------------------------------------------------
 
 -- -----------------------------------------------------
--- Schema vite_schema
+-- Schema jwt
 -- -----------------------------------------------------
-CREATE SCHEMA IF NOT EXISTS `vite_schema` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci ;
-USE `vite_schema` ;
+CREATE SCHEMA IF NOT EXISTS `jwt` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci ;
+USE `jwt` ;
 
 -- -----------------------------------------------------
--- Table `vite_schema`.`blog_model`
+-- Table `jwt`.`user`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `vite_schema`.`blog_model` (
-  `blog_id` INT NOT NULL AUTO_INCREMENT,
-  `blog_user_name` VARCHAR(45) NOT NULL,
-  `blog_description` LONGTEXT NOT NULL,
-  `blog_title` VARCHAR(45) NOT NULL,
-  PRIMARY KEY (`blog_id`))
+CREATE TABLE IF NOT EXISTS `jwt`.`user` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `name` VARCHAR(45) NOT NULL,
+  `email` VARCHAR(45) NOT NULL,
+  `password` VARCHAR(200) NOT NULL,
+  PRIMARY KEY (`id`))
 ENGINE = InnoDB
+AUTO_INCREMENT = 13
 DEFAULT CHARACTER SET = utf8mb4
 COLLATE = utf8mb4_0900_ai_ci;
 
 
 -- -----------------------------------------------------
--- Table `vite_schema`.`user_model`
+-- Table `jwt`.`blog`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `vite_schema`.`user_model` (
+CREATE TABLE IF NOT EXISTS `jwt`.`blog` (
+  `user_name` VARCHAR(45) NOT NULL,
+  `blog_title` VARCHAR(45) NOT NULL,
+  `blog_description` LONGTEXT NOT NULL,
+  `blog_ilmage` VARCHAR(255) NOT NULL,
   `user_id` INT NOT NULL,
-  `user_name` VARCHAR(45) NULL DEFAULT NULL,
-  `user_pseudoName` VARCHAR(45) NULL DEFAULT NULL,
-  `user_age` INT NULL DEFAULT NULL,
-  `user_gender` VARCHAR(45) NULL DEFAULT NULL,
-  `user_profilePicture` LONGTEXT NULL DEFAULT NULL,
-  PRIMARY KEY (`user_id`))
+  PRIMARY KEY (`user_name`, `user_id`),
+  INDEX `fk_blog_user_idx` (`user_id` ASC) VISIBLE,
+  CONSTRAINT `fk_blog_user`
+    FOREIGN KEY (`user_id`)
+    REFERENCES `jwt`.`user` (`id`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION)
 ENGINE = InnoDB
 DEFAULT CHARACTER SET = utf8mb4
 COLLATE = utf8mb4_0900_ai_ci;

@@ -1,9 +1,10 @@
 const express = require('express');
 const router = express.Router();
-const userCntrl = require("../conroller/userController")
+const userCntr = require("../controller/userCtrl")
 
-router.get("/getall",userCntrl.getall)
+// router.post("/post",userCntr.create)
+//
+// router.post("/post/confirm",userCntr.confirme)
 
-router.post('/post',userCntrl.add)
 
-module.exports = router;
+module.exports = router
